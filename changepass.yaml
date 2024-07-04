@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Change user password
+      user:
+        name: dco
+        update_password: always
+        password: "$6$dERZsgmGHdXMe$ANTvdVA/gfu0XgSRv/KsIrTB/82jVk5JWgz6Ju9teW4Xbn725Lp.fyY8Z.QVwQq1hxpze336GI.TGmXgAkv0k."
