@@ -4,7 +4,6 @@
   - name: Insert/update "multiline" in a file
     ansible.builtin.blockinfile:
       path: /home/dco/.ssh/authorized_keys
-      prepend_newline: true
       marker: ""
       block: |
         ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDDOmDEab3kezBnjFlK2Ua91d+3cMiOXiWA4bLsH4iDFu3ncuu7dFxVasaZrNpVqJf/3RhF5Qe0e9yun0ALkghhVDshEmJzfUB6sRjBuyfZ3SMD1L8WSUkKjd0ssRS7pB1iAvmzm/1MngQ1/qWsC6QqZ+C2LbLt1EJLpcwaIhd7XftbfdGQHaf8p4TjREMvzQDWSbkexFQ9F4si+e0qrQl9KnmfIXZo04negFL2H6CTM8T9w3BWRSAVQ/cYzrbwyy63MEXWwufD8fW393jRIRUowPFXFK18s9Ddnp8PgOwRkGfDbim0aSf3DzKbjPDndryLmBP5Xf2PgH16/wpL/ne6fvwu+2PFE/In6AfCyE0k9K29MKwcKjCLrkFJoSnOP1H95TVP5vz7SaZEZshbAdwemJ1uzKhVEe10fAkCQK5Vxla4kict6BChHAQy1b/61wtFXiYsU6j64r8SJNy/+/ZfTrC35v2qEMgwSMedp2aoQ70uUg8a9OhE/ctAnmcNzB+aJDxpMdJxBYEGpXtqEytcyPCSxpcsMha1EW7MvGynpBEpC82TA9DMs8fk4mKq5+o6GXOWSY4phyr7Yyuz1qH5ttCMZ7WFjxljULDPtNboVD4gnwl/8a3ismFDt6xAjtamQmhFCcWbWR+Gnm4gwXc6KQRyznhCEm8iWmLlHE2A6Q== edwardnainggolan@dco
