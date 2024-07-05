@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: Copy file with owner and permissions
+    ansible.builtin.copy:
+      src: /opt/semaphore/playbooks/changepass.yaml
+      dest: /home/dco/changepass.yaml
+      owner: dco
+      group: dco
+      mode: '0644'
