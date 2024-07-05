@@ -3,7 +3,7 @@
   tasks:
   - name: Copy file with owner and permissions
     ansible.builtin.copy:
-      src: /opt/semaphore/playbooks/changepass.yaml
+      src: /opt/semaphore/files/changepass.yaml
       dest: /home/dco/changepass.yaml
       owner: dco
       group: dco
