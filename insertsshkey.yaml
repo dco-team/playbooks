@@ -6,6 +6,6 @@
       path: /home/dco/.ssh/authorized_keys
       marker: ""
       block: |
-        ssh-rsa <LONG_KEY-STRINGS> edwardnainggolan@dco
-        ssh-rsa <LONG_KEY-STRINGS> benisantoso@dco
-        ssh-rsa <LONG_KEY-STRINGS> poniranpo@dco
+        ssh-rsa <LONG_KEY-STRINGS> user1@dco
+        ssh-rsa <LONG_KEY-STRINGS> user2@dco
+        ssh-rsa <LONG_KEY-STRINGS> user3@dco
