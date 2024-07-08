@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Copy file with owner and permissions
+    ansible.builtin.copy:
+      src: /home/dco/setup_proxy.sh
+      dest: /home/dco/setup_proxy.sh
+      owner: dco
+      group: dco
+      mode: '0755'
+  - name: Run setup proxy
+    script: /home/dco/setup_proxy.sh
