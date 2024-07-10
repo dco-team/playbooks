@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: Insert/update "multiline" in a file
+    ansible.builtin.blockinfile:
+      path: /home/dco/.ssh/authorized_keys
+      marker: ""
+      block: |
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC24Fg8il5xN/2YlSWuqlmgB7WloBffEoq9DoOUSHyFAjHx0h5uzZyGnfcOEwOtgsct4HZ+eaOcLff397XoJANR57DE1I4SnRRW3SUrpOvyLsHN2sMEgvMo+pKYvtURWQXtitzBkTomUh5AldUyNhrHr0/8HgGNdqt9F7XAd8nB7QRHRYmYZLy7u5g1yjSXwR1RdVg5pzd0eQs1PLKkiQkr3zFsh1+4ghjBBj9cMfnzAEU/Vv4ewxG3GTvwQzDXJa8J2GM+2EoYxrv2BCLzhs8vwJ6Zvj+zWXWQ2nYcdZ51iu/BCIUTp317CZrkC5ndKikJ1g0GjsA2Lyf/8CFuoc4IFETHn0jDK86pe7+6JH0szA3scqI2QuVFqx5DACciq9OtM1xOr+42afCRNYwTH5OiaVfQkl+DhMao0S8gytNmYZmz4gUdZLB2EpZh9r0RPl4JzBzwScbb13y5RXtW222BuKWORrMVDn/5uElKps9yQkkFo+XnRKzgukbwW3VXObc= user@LAPTOP-EDO3DCOICT
+        
